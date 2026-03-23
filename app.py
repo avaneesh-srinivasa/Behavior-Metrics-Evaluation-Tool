@@ -227,7 +227,7 @@ st.caption("Highlighted columns indicate computed behavior metrics.")
 st.subheader("Behavior Diagnosis")
 
 col1, col2, col3, col4 = st.columns(4)
-col1.markdown(f"**Diagnosis:** {diagnosis}")
+col1.markdown(f"### {diagnosis}")
 col2.metric("Minimum TTC", "N/A" if pd.isna(min_ttc) else f"{min_ttc:.2f} s")
 col3.metric("Reaction Delay", "N/A" if pd.isna(reaction_delay) else f"{reaction_delay:.2f} s")
 col4.metric("Max Ego Decel", f"{max_ego_decel:.2f} m/s²")
